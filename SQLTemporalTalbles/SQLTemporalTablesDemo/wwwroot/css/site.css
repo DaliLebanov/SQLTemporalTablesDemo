@@ -16,3 +16,50 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.myTable {
+    overflow-x: auto;
+    margin: auto;
+}
+
+    .myTable th {
+        padding: 10px 5px 10px 5px;
+        text-align: center;
+        background-color: white;
+    }
+
+
+
+td {
+    word-break: normal !important;
+    max-width: 200px !important;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden !important;
+    max-height: 100px !important;
+    background-color: white;
+}
+.button-style {
+    padding: 5px 5px 5px 5px !important;
+    text-decoration: none !important;
+    text-align: center;
+    display: block;
+    border: none;
+    font-family: arial, sans-serif;
+    cursor: pointer;
+}
+
+td.button-style {
+    height: 10% !important;
+}
+
+.button-style:hover {
+    background-color: #dbd5c3;
+}
+
+#button-col {
+    border: hidden !important;
+    color: none !important;
+    background: none !important;
+    padding: 0 !important;
+    bottom: 100% !important;
+}

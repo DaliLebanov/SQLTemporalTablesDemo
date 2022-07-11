@@ -1,8 +1,61 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿@using SQLTemporalTablesDemo.Data.DataModels
+@model List<Person>
+<div class="row">
+    <div class="col-md-3"></div>
+    
+        <div class="col-md-4">
+            <a asp-controller="Home" asp-action="AddPerson" class="btn btn-danger btn-lg">Add Person</a>
+        </div>
+    
 </div>
+<br />
+
+
+<br />
+
+<table class="table-bordered myTable">
+    <thead align="center">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Date of Birth</th>
+            <th>Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr>
+              <td>@person.Name</td>
+              <td>@person.Age</td>
+              <td>@person.DateOfBirth</td>
+              <td>@person.Note</td>
+              
+                <td class="button-style">
+                    <a style="background:none; color:blue !important;" class="button-style" asp-controller="Home"
+                       asp-action="EditPerson"
+                       asp-route-id="@person.ID">
+                        Edit
+                    </a>
+                </td>
+                <td class="button-style">
+                    <a style="background:none; color:blue !important;" class="button-style" asp-controller="Home"
+                       asp-action="ChangesPerson"
+                       asp-route-id="@person.ID">
+                        Changes
+                    </a>
+                </td>
+                <td class="button-style">
+                    <form method="post" 
+                    asp-action="DeletePerson" 
+                    asp-route-id="@person.ID">
+                            <button class="button-style" style="background:none; color:red;" type="submit"
+                                    onclick="return confirm('Are you sure you want to delete: @person.Name ')">
+                                Delete
+                            </button>
+                        </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

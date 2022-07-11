@@ -15,12 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Home/AddPerson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQZXJzb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Home/EditPerson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UGVyc29uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dlebanov/source/repos/SQLTemporalTablesDemo/SQLTemporalTalbles/SQLTemporalTablesDemo/Views/Shared/Error.cshtml]

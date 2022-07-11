@@ -59,3 +59,8 @@ C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTempo
 C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\obj\Debug\net6.0\SQLTemporalTablesDemo.pdb
 C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\obj\Debug\net6.0\SQLTemporalTablesDemo.genruntimeconfig.cache
 C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\obj\Debug\net6.0\ref\SQLTemporalTablesDemo.dll
+C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\dlebanov\source\repos\SQLTemporalTablesDemo\SQLTemporalTalbles\SQLTemporalTablesDemo\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

@@ -1,32 +1,57 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using SQLTemporalTablesDemo.Data.DataModels;
+using SQLTemporalTablesDemo.Managers;
 using SQLTemporalTablesDemo.Models;
 using System.Diagnostics;
 
 namespace SQLTemporalTablesDemo.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IPersonManager _personManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IPersonManager personManager)
         {
-            _logger = logger;
+            _personManager = personManager;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var persons = _personManager.GetAllPersons();
+
+            return View(persons);
         }
 
-        public IActionResult Privacy()
+        public IActionResult AddPerson()
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        public IActionResult AddPerson(Person model)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            _personManager.Insert(model);
+            return RedirectToAction("Index");
+        }
+
+       
+        public IActionResult EditPerson(int id)
+        {
+            var person = _personManager.GetById(id);
+            return View(person);
+        }
+        [HttpPost]
+        public IActionResult UpdatePerson(Person model)
+        {
+            _personManager.Update(model);
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult DeletePerson(int id)
+        {
+            _personManager.Delete(id);
+            return RedirectToAction("Index");
         }
     }
 }

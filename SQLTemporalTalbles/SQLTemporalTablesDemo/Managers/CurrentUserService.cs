@@ -11,16 +11,11 @@ namespace SQLTemporalTablesDemo.Managers
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public int? UserId
+        public string UserId
         {
             get
             {
-                var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId;
-                if (int.TryParse(userIdClaim, out userId))
-                    return userId;
-
-                return null;
+                return _httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
             }
         }
 

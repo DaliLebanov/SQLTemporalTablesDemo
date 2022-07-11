@@ -16,7 +16,7 @@ namespace SQLTemporalTablesDemo.Managers
         /// </summary>
         public void SetModified<T>(T model) where T : BaseStatusLogModel
         {
-            model.ModifiedBy = _currentUserService.UserId.Value;
+            model.ModifiedBy = _currentUserService.UserId;
             model.ModifiedDate = DateTime.Now;
         }
     }

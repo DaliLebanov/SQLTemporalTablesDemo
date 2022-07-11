@@ -2,7 +2,7 @@
 {
     public abstract class BaseStatusLogModel
     {
-        public int ModifiedBy { get; set; }
+        public string ModifiedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
     }
 }

@@ -16,10 +16,10 @@ namespace SQLTemporalTablesDemo.Managers
         /// </summary>
         public void SetCreated<T>(T model) where T : BaseModifiableModel
         {
-            model.CreatedBy = _currentUserService.UserId.Value;
+            model.CreatedBy = _currentUserService.UserId;
             model.CreatedDate = DateTime.Now;
 
-            model.LastModifiedBy = _currentUserService.UserId.Value;
+            model.LastModifiedBy = _currentUserService.UserId;
             model.LastModifiedDate = DateTime.Now;
         }
 
@@ -28,7 +28,7 @@ namespace SQLTemporalTablesDemo.Managers
         /// </summary>
         public void SetModified<T>(T model) where T : BaseModifiableModel
         {
-            model.LastModifiedBy = _currentUserService.UserId.Value;
+            model.LastModifiedBy = _currentUserService.UserId;
             model.LastModifiedDate = DateTime.Now;
         }
     }

@@ -1,0 +1,46 @@
+﻿@using SQLTemporalTablesDemo.Data.DataModels
+@model Person
+
+<div class="container">
+    <div class="modal-content" style="max-width:350px; display:flex; justify-content:center; margin:auto">
+        <div class="modal-body">
+            <form asp-controller="Home" asp-action="UpdatePerson" method="post">
+                
+                <input hidden type="number" asp-for="ID" />
+                <br />
+
+                <div class="form-group">
+                    <label asp-for="Name">Name</label>
+                    <div class="input-group">
+                        <input  asp-for="Name" type="text" class="form-control" placeholder="Name" />
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Age">Age</label>
+                    <div class="input-group">
+                        <input asp-for="Age" type="number" class="form-control" placeholder="Age" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DateOfBirth">Date of birth</label>
+                    <div class="input-group">
+                        <input asp-for="DateOfBirth" type="date" class="form-control"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Note">Note</label>
+                    <div class="input-group">
+                        <textarea asp-for="Note" rows="3" class="form-control" placeholder="Note"></textarea>
+                    </div>
+                </div>
+
+                <br />
+                <button class="btn btn-success" type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
